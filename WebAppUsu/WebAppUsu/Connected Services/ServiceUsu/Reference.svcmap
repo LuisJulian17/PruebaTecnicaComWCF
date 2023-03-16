@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="950ce19e-d17d-4dbd-b040-ac742c7573cd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63445/myUsuarioService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="myUsuarioService.wsdl" MetadataType="Wsdl" ID="26db88dc-f92e-4c03-adb3-90ffba188aff" SourceId="1" SourceUrl="http://localhost:63445/myUsuarioService.svc?wsdl" />
+    <MetadataFile FileName="myUsuarioService.disco" MetadataType="Disco" ID="b2aafdad-eed0-4485-8c8f-54026a3bc647" SourceId="1" SourceUrl="http://localhost:63445/myUsuarioService.svc?disco" />
+    <MetadataFile FileName="myUsuarioService.xsd" MetadataType="Schema" ID="63239846-b027-486b-bf62-112a8f6de7f0" SourceId="1" SourceUrl="http://localhost:63445/myUsuarioService.svc?xsd=xsd2" />
+    <MetadataFile FileName="myUsuarioService1.xsd" MetadataType="Schema" ID="ce786691-b07d-4a86-a954-981f07d3485c" SourceId="1" SourceUrl="http://localhost:63445/myUsuarioService.svc?xsd=xsd1" />
+    <MetadataFile FileName="myUsuarioService2.xsd" MetadataType="Schema" ID="3036ee0a-06ca-4ae3-9895-e2d07b86d4f9" SourceId="1" SourceUrl="http://localhost:63445/myUsuarioService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

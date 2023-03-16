@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="myUsuarioService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63445/myUsuarioService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63445/myUsuarioService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63445/myUsuarioService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="myUsuarioIService_NuevoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_NuevoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NuevoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_EditarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_EditarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_EliminarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_EliminarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_buscarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:buscarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_buscarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:buscarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_ListarUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="myUsuarioIService_ListarUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="myUsuarioIService">
+    <wsdl:operation name="NuevoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/myUsuarioIService/NuevoUsuario" message="tns:myUsuarioIService_NuevoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/myUsuarioIService/NuevoUsuarioResponse" message="tns:myUsuarioIService_NuevoUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/myUsuarioIService/EditarUsuario" message="tns:myUsuarioIService_EditarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/myUsuarioIService/EditarUsuarioResponse" message="tns:myUsuarioIService_EditarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/myUsuarioIService/EliminarUsuario" message="tns:myUsuarioIService_EliminarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/myUsuarioIService/EliminarUsuarioResponse" message="tns:myUsuarioIService_EliminarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/myUsuarioIService/buscarUsuario" message="tns:myUsuarioIService_buscarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/myUsuarioIService/buscarUsuarioResponse" message="tns:myUsuarioIService_buscarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/myUsuarioIService/ListarUsuarios" message="tns:myUsuarioIService_ListarUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/myUsuarioIService/ListarUsuariosResponse" message="tns:myUsuarioIService_ListarUsuarios_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_myUsuarioIService" type="tns:myUsuarioIService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NuevoUsuario">
+      <soap:operation soapAction="http://tempuri.org/myUsuarioIService/NuevoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditarUsuario">
+      <soap:operation soapAction="http://tempuri.org/myUsuarioIService/EditarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <soap:operation soapAction="http://tempuri.org/myUsuarioIService/EliminarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuario">
+      <soap:operation soapAction="http://tempuri.org/myUsuarioIService/buscarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarUsuarios">
+      <soap:operation soapAction="http://tempuri.org/myUsuarioIService/ListarUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="myUsuarioService">
+    <wsdl:port name="BasicHttpBinding_myUsuarioIService" binding="tns:BasicHttpBinding_myUsuarioIService">
+      <soap:address location="http://localhost:63445/myUsuarioService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
