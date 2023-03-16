@@ -1,7 +1,7 @@
 # PruebaTecnicaComWCF
 > - Prueba tecnica con WCF - C# - ASP.NET - Bootstrap
 > - JULIAN
-> - Tiempo de trabajo en el proyecto desde el sabado 15 de marzo hasta domingo 16 de marzo)
+> - Tiempo de trabajo en el proyecto desde el sabado 15 de miercoles hasta jueves 16 de marzo)
 
 ## Instrucciones para instalacion y requisitos para la ejecución
 # Requsitos
