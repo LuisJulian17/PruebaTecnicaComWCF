@@ -24,4 +24,4 @@
 * Ejecutamos el proyecto WebAppUsu sin dejar de compilar el WCF
 * El proyecto se ejecutara en el navegador y ya esta listo para ser usado
 
-Para ver mi mis habilidades y mis proyectos puedes ver mi [**portafolio**](https://julianrodriguezportfolio.netlify.app/ "portafolio").
+Para saber mas sobre mis habilidades y mis proyectos puedes ver mi [**portafolio**](https://julianrodriguezportfolio.netlify.app/ "portafolio").
